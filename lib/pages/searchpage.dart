@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:weatherapp/result.dart';
 
 class SearchPageWidget extends StatefulWidget {
   const SearchPageWidget({super.key});
@@ -37,6 +38,9 @@ class _SearchPageWidgetState extends State<SearchPageWidget> {
               ),
             ),
             ElevatedButton(onPressed: (){
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ResultPage()));
               print('Search Term : $search_term');
             }, child: Text('Search'))
           ],
