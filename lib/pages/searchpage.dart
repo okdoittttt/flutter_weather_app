@@ -40,7 +40,7 @@ class _SearchPageWidgetState extends State<SearchPageWidget> {
             ElevatedButton(onPressed: (){
               Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ResultPage()));
+                  MaterialPageRoute(builder: (context) => ResultPage(searchTerm: search_term)));
               print('Search Term : $search_term');
             }, child: Text('Search'))
           ],
