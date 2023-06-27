@@ -1,16 +1,20 @@
 # weatherapp
 
-A new Flutter project.
+첫 번째 Flutter 프로젝트
+전국 해수욕장 데이터 API를 사용하여 해수욕장의 수온, 파고를 출력하는 간단한 앱.
+디자인은 신경쓰지 않고 Flutter의 화면 이동, 결과 출력, 값 전달, 매개변수, class, 함수 등의 기능을 한 번씩 모두 사용해 보는 것이 목표인 프로젝트.
 
-## Getting Started
+## 현재 구현 상태
+- 메인 페이지(간단한 버튼)
+- 메인 페이지 -> 검색 페이지 -> 결과 출력 (페이지 화면 이동)
+- 검색 페이지에서 검색 입력 후 해수욕장 변수 값을 결과 페이지로 전달.
+- 전달받은 변수를 출력 후 API 처리하는 class로 값 전달.
 
-This project is a starting point for a Flutter application.
+## 구현 해야할 사항
+- 검색한 해수욕장을 고유 넘버로 변환
+- API 처리 class에서 고유 넘버와 현재 시각을 기준으로 데이터 값 반환
+- 결과 페이지에 출력
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 사용한 라이브러리 & 버전
+- API : 전국 해수욕장 날씨 정보
+- http : 1.0.0
